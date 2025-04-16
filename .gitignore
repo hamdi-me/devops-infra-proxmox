@@ -1,0 +1,11 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfvars
+*.log
+
+# Ansible
+*.retry
+
+# Systèmes
+*.DS_Store
