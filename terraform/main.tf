@@ -10,7 +10,7 @@ terraform {
 provider "proxmox" {
   pm_api_url = "https://192.168.1.21:8006/api2/json"
   pm_user    = "root@pam"
-  pm_password = "hamdi2016@"
+  pm_password = "proxmox@"
   pm_tls_insecure = true
 }
 
@@ -38,11 +38,10 @@ resource "proxmox_vm_qemu" "dev_vm" {
 
   ipconfig0 = "ip=dhcp"
 
-  ssh_user     = "ubuntu"
-  ssh_private_key = file("C:/Users/hamdi/.ssh/id_ecdsa")
+  ssh_user = "ubuntu"
+  sshkeys = file("C:/Users/hamdi/.ssh/id_ecdsa.pub")
 
   ciuser = "ubuntu"
-  cipassword = "ubuntu" # Tu peux l’enlever si tu utilises uniquement SSH
 
   os_type = "cloud-init"
 }
