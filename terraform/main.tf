@@ -15,9 +15,9 @@ provider "proxmox" {
 }
 
 resource "proxmox_vm_qemu" "dev_vm" {
-  name        = "VM-clone"
+  name        = "MariaDB"
   target_node = "pve"
-  clone       = "nginx"
+  clone       = "template"
 
   cores       = 2
   sockets     = 1
