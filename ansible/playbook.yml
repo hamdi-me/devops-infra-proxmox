@@ -1,27 +1,12 @@
 ---
-hosts: all
-become: yes
-tasks:
-- name: Install nginx
-  apt:
-    name: nginx
-    state: present
-    update_cache: yes
+- name: Déployer le serveur web
+  hosts: nginx
+  become: true
+  roles:
+    - nginx
 
-- name: Ensure nginx is running
-  service:
-    name: nginx
-    state: started
-    enabled: yes
-
-- name: Install MariaDB
-  apt:
-    name: mariadb-server
-    state: present
-    update_cache: yes
-
-- name: Ensure MariaDB is running
-  service:
-    name: mariadb
-    state: started
-    enabled: yes
+- name: Déployer la base de données
+  hosts: mariadb
+  become: true
+  roles:
+    - mariadb

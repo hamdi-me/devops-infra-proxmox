@@ -1,0 +1,14 @@
+---
+# tasks file for nginx
+- name: Install nginx web server
+  ansible.builtin.apt:
+    name: nginx
+    state: present
+    update_cache: true
+
+- name: Start and enable Nginx service
+  ansible.builtin.service:
+    name: nginx
+    state: started
+    enabled: true
+    
