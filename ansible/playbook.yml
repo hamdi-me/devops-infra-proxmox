@@ -8,8 +8,20 @@ tasks:
     state: present
     update_cache: yes
 
-- name: ensure nginx is running
+- name: Ensure nginx is running
   service:
     name: nginx
+    state: started
+    enabled: yes
+
+- name: Install MariaDB
+  apt:
+    name: mariadb-server
+    state: present
+    update_cache: yes
+
+- name: Ensure MariaDB is running
+  service:
+    name: mariadb
     state: started
     enabled: yes
