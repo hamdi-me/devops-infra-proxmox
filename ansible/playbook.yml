@@ -16,5 +16,5 @@
   become: true
   roles:
     - prometheus
-    - grafana
+    - Grafana
     
