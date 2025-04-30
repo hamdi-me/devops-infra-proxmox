@@ -15,7 +15,7 @@ provider "proxmox" {
 }
 
 resource "proxmox_vm_qemu" "dev_vm" {
-  name        = "MariaDB"
+  name        = "monitoring"
   target_node = "pve"
   clone       = "template"
 
