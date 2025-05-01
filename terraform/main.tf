@@ -39,7 +39,7 @@ resource "proxmox_vm_qemu" "dev_vm" {
   ipconfig0 = "ip=dhcp"
 
   ssh_user = "ubuntu"
-  sshkeys = file("C:/Users/hamdi/.ssh/id_ecdsa.pub")
+  sshkeys = file("~/.ssh/id_ansible.pub")
 
   ciuser = "ubuntu"
 
