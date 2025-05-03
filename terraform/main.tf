@@ -8,7 +8,7 @@ terraform {
 }
 
 provider "proxmox" {
-  pm_api_url = "https://192.168.1.21:8006/api2/json"
+  pm_api_url = "https://192.168.1.32:8006/api2/json"
   pm_user    = "root@pam"
   pm_password = "proxmox@"
   pm_tls_insecure = true
@@ -39,7 +39,7 @@ resource "proxmox_vm_qemu" "dev_vm" {
   ipconfig0 = "ip=dhcp"
 
   ssh_user = "ubuntu"
-  sshkeys = file("~/.ssh/id_ansible.pub")
+  sshkeys = file("/root/.ssh/id_ansible.pub")
 
   ciuser = "ubuntu"
 
