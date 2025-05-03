@@ -17,4 +17,9 @@
   roles:
     - prometheus
     - Grafana
-    
+
+- name: Installer Node_Exporter
+  hosts: node_exporter_vms
+  become: true
+  roles:
+    - node_exporter
