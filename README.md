@@ -21,15 +21,22 @@ ainsi qu’un système de monitoring avec Prometheus + Grafana.
 ## Architecture
 ![Infrastructure](./docs/Schema.JPG)
 
-## Captures d'écran
-NGINX HTTPS :
-![NGINX_HTTPS](./docs/nginx.png)
-Grafana Dashboard :
-![Grafana](./docs/grafana-dashboard.JPG)
-Prometheus Targets :
-![Prometheus](./docs/prometheus.JPG)
-Ansible OK :
+
+## 📸 Captures d'écran
+
+### ✅ Ansible : Déploiement des rôles
 ![Ansible_OK](./docs/ansible1.png)
+
+### 🔐 NGINX sécurisé avec HTTPS
+![NGINX_HTTPS](./docs/nginx.png)
+
+### 📊 Dashboard Grafana
+![Grafana](./docs/grafana-dashboard.JPG)
+
+### 🎯 Cibles Prometheus actives
+![Prometheus](./docs/prometheus.JPG)
+
+
 
 ## Auteur
 HAMDI
