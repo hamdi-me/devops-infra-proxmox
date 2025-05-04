@@ -22,10 +22,10 @@ ainsi qu’un système de monitoring avec Prometheus + Grafana.
 ![Infrastructure](./docs/Schema.JPG)
 
 ## Captures d'écran
- [NGINX_HTTPS](./docs/nginx.png)
- [Grafana](./docs/grafana-dashboard.JPG)
- [Prometheus](./docs/prometheus.JPG)
- [Ansible_OK](./docs/ansible1.png)
+![NGINX_HTTPS](./docs/nginx.png)
+![Grafana](./docs/grafana-dashboard.JPG)
+![Prometheus](./docs/prometheus.JPG)
+![Ansible_OK](./docs/ansible1.png)
 
 ## Auteur
 HAMDI
