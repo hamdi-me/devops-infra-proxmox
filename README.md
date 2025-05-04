@@ -26,6 +26,7 @@ ainsi qu’un système de monitoring avec Prometheus + Grafana.
 
 ### ✅ Ansible : Déploiement des rôles
 ![Ansible_OK](./docs/ansible1.png)
+![Ansible_OK](./docs/ansible2.png)
 
 ### 🔐 NGINX sécurisé avec HTTPS
 ![NGINX_HTTPS](./docs/nginx.png)
