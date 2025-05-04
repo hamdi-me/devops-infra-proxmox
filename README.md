@@ -10,9 +10,6 @@ ainsi qu’un système de monitoring avec Prometheus + Grafana.
 - Superviser les services via dashboard
 - Comprendre les bonnes pratiques DevOps en environnement local
 
-## Architecture
-![Infrastructure](./docs/Schema.JPG)
-
 ## Technologies utilisées
 - Proxmox VE
 - Terraform
@@ -20,6 +17,15 @@ ainsi qu’un système de monitoring avec Prometheus + Grafana.
 - Prometheus + Grafana
 - NGINX
 - MariaDB
+
+## Architecture
+![Infrastructure](./docs/Schema.JPG)
+
+## Captures d'écran
+ [NGINX_HTTPS](./docs/nginx.png)
+ [Grafana](./docs/grafana-dashboard.JPG)
+ [Prometheus](./docs/prometheus.JPG)
+ [Ansible_OK](./docs/ansible1.png)
 
 ## Auteur
 HAMDI
